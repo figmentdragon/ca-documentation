@@ -1,0 +1,1798 @@
+@charset "UTF-8";
+/*!
+* Start Bootstrap - undefined v1.0.0 (https://github.com/figmentdragon/cjmtermini_theme#readme)
+* Copyright 2013-2021 cjmtermini
+* Licensed under ISC (https://github.com/StartBootstrap/cjmt/blob/master/LICENSE)
+*/
+/*
+Theme Name: Your Theme Name
+Theme URI: Your Theme URL
+Author: Your Name
+Author URI: Your URL
+Description: Describe your theme and its features.
+Version: Your Theme's Version Number
+License: GNU General Public License
+License URI: license.txt
+Tags: insert tags to describe your theme to help users search for it. Find the list of tags at: http://wordpress.org/extend/themes/about/
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+IMPORTANT: This stylesheet is designed for learning and includes comments for guidance. It's a good idea to remove the comments when preparing your them for distribution. However, keep the section headers (the word 'Reset' below is an example of a section header) intact.
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/ and Blueprint http://www.blueprintcss.org/
+*/
+/* @font-face kit by Fonts2u (https://fonts2u.com) */
+@font-face {
+  font-family: "Avdira";
+  src: url("Avdira_R.eot?") format("eot"), url("Avdira_R.woff") format("woff"), url("Avdira_R.ttf") format("truetype"), url("Avdira_R.svg#Avdira") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cupola";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Cupola"), url("https://fonts.cdnfonts.com/s/17820/CupolaRegular.woff") format("woff");
+}
+@font-face {
+  font-family: "Cupola";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Cupola"), url("https://fonts.cdnfonts.com/s/17820/CupolaSmallCaps.woff") format("woff");
+}
+@font-face {
+  font-family: "Cupola";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Cupola"), url("https://fonts.cdnfonts.com/s/17820/CupolaItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Cupola";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Cupola"), url("https://fonts.cdnfonts.com/s/17820/CupolaBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Cupola";
+  font-weight: 700;
+  font-style: italic;
+  src: local("Cupola"), url("https://fonts.cdnfonts.com/s/17820/CupolaBoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Enjoy Writing";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Enjoy Writing"), url("https://fonts.cdnfonts.com/s/34906/EnjoyWriting-YzElj.woff") format("woff");
+}
+@font-face {
+  font-family: "Euphorigenic";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Euphorigenic"), url("https://fonts.cdnfonts.com/s/8860/euphorigenic.woff") format("woff");
+}
+@font-face {
+  font-family: "Glass Antiqua";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Glass Antiqua"), url("https://fonts.cdnfonts.com/s/15865/GlassAntiqua-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Hadley";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Hadley"), url("https://fonts.cdnfonts.com/s/4509/Hadley__.woff") format("woff");
+}
+@font-face {
+  font-family: "Hadley Alts";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Hadley Alts"), url("https://fonts.cdnfonts.com/s/4509/HADALT__.woff") format("woff");
+}
+@font-face {
+  font-family: "Hand TypeWriter";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Hand TypeWriter"), url("https://fonts.cdnfonts.com/s/16195/Hand TypeWriter.woff") format("woff");
+}
+@font-face {
+  font-family: "Love Ya Like A Sister";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Love Ya Like A Sister"), url("https://fonts.cdnfonts.com/s/15064/LoveYaLikeASister.woff") format("woff");
+}
+@font-face {
+  font-family: "Love Ya Like A Sister Solid";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Love Ya Like A Sister Solid"), url("https://fonts.cdnfonts.com/s/15064/LoveYaLikeASisterSolid.woff") format("woff");
+}
+@font-face {
+  font-family: "Pompiere";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Pompiere"), url("https://fonts.cdnfonts.com/s/12351/Pompiere-Regular.woff") format("woff");
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCFPrEHJA.woff2") format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCMPrEHJA.woff2") format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCHPrEHJA.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCGPrEHJA.woff2") format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrE.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Wanda";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Wanda"), url("https://fonts.cdnfonts.com/s/4594/WANDA___.woff") format("woff");
+}
+@font-face {
+  font-family: "Wanda";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Wanda"), url("https://fonts.cdnfonts.com/s/4594/WANDA___.woff") format("woff");
+}
+@font-face {
+  font-family: "Wanda";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Wanda"), url("https://fonts.cdnfonts.com/s/4594/WANDB___.woff") format("woff");
+}
+@font-face {
+  font-family: "Wanda";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Wanda"), url("https://fonts.cdnfonts.com/s/4594/WANDB___.woff") format("woff");
+}
+/* ## Colors =============== */
+/* teal */
+/* chocolate (chocolate) */
+/* silver */
+/* yellow (sunglow) */
+/* Saltpan */
+/* dark white */
+/* GRADIENTS */
+/* GRADIENT BORDERS */
+.border-gradient-chocolate {
+  -o-border-image: linear-gradient(30deg, rgba(98, 52, 18, 0.45) 10%, rgba(123, 63, 0, 0.55) 20%, rgba(193, 154, 107, 0.65) 30%, #ffffcc 80%) 10% round;
+  border-image: linear-gradient(30deg, rgba(98, 52, 18, 0.45) 10%, rgba(123, 63, 0, 0.55) 20%, rgba(193, 154, 107, 0.65) 30%, #ffffcc 80%) 10% round;
+}
+
+.border-gradient-primary {
+  -o-border-image: gradient-primary 10% round;
+  border-image: gradient-primary 10% round;
+}
+
+.border-gradient-white {
+  -o-border-image: linear-gradient(-70deg, rgba(0, 0, 0, 0.2) 30%, rgba(251, 251, 253, 0.3) 45%, rgba(237, 230, 214, 0.4) 60%, rgba(228, 237, 244, 0.5) 75%, rgba(168, 169, 173, 0.6) 90%, rgba(78, 78, 78, 0.7) 100%), 10% round;
+  border-image: linear-gradient(-70deg, rgba(0, 0, 0, 0.2) 30%, rgba(251, 251, 253, 0.3) 45%, rgba(237, 230, 214, 0.4) 60%, rgba(228, 237, 244, 0.5) 75%, rgba(168, 169, 173, 0.6) 90%, rgba(78, 78, 78, 0.7) 100%), 10% round;
+}
+
+.border-gradient-theme {
+  -o-border-image: linear-gradient(-120deg, rgba(10, 186, 181, 0.4) 35%, rgba(168, 169, 173, 0.3) 65%, rgba(255, 228, 30, 0.2) 75%, rgba(128, 0, 0, 0.1) 95%) 10% round;
+  border-image: linear-gradient(-120deg, rgba(10, 186, 181, 0.4) 35%, rgba(168, 169, 173, 0.3) 65%, rgba(255, 228, 30, 0.2) 75%, rgba(128, 0, 0, 0.1) 95%) 10% round;
+}
+
+.border-gradient-yellow {
+  -o-border-image: linear-gradient(150deg, rgba(255, 227, 2, 0.45) 35%, rgba(255, 228, 30, 0.7) 65%, rgba(11, 218, 81, 0.2) 100%) 10% round;
+  border-image: linear-gradient(150deg, rgba(255, 227, 2, 0.45) 35%, rgba(255, 228, 30, 0.7) 65%, rgba(11, 218, 81, 0.2) 100%) 10% round;
+}
+
+/* BOX SHADOW */
+/**
+ * ## Z-Index
+ =========================*/
+.border-gradient-* {
+  border-width: lg;
+  border-style: solid;
+  border-radius: 0.875rem;
+}
+
+/**
+ * ## Card
+ =========================*/
+:root {
+  --ca-blue: #4169e1;
+  --ca-indigo: #6600ff;
+  --ca-purple: #510bda;
+  --ca-pink: #cc3399;
+  --ca-red: #dc3545;
+  --ca-orange: #ff9966;
+  --ca-yellow: #ffe41e;
+  --ca-green: #0bda51;
+  --ca-teal: #caffff;
+  --ca-cyan: #0abab5;
+  --ca-white: #e4edf4;
+  --ca-gray: #3e3e3e;
+  --ca-dark: #282828;
+  --ca-light: #9a9a9a;
+  --ca-silver: #a8a9ad;
+  --ca-chocolate: #7b3f00;
+  --ca-chocolate: #623412;
+  --ca-camel: #c19a6b;
+  --ca-saltpan: #ffffcc;
+  --ca-white-chocolate: #ede6d6;
+  --ca-dark-vanilla: #d1bea8;
+  --ca-ghost-white: #fbfbfd;
+  --ca-deep-sky-blue: #0dcaf0;
+  --ca-coral: #ff7f50;
+  --ca-maroon: #800000;
+  --ca-#0abab5100: #c0c0c0;
+  --ca-#0abab5200: #9a9a9a;
+  --ca-#0abab5300: #7b7b7b;
+  --ca-#0abab5400: #626262;
+  --ca-#0abab5500: #4e4e4e;
+  --ca-#0abab5600: #3e3e3e;
+  --ca-#0abab5700: #323232;
+  --ca-#0abab5800: #282828;
+  --ca-#0abab5900: #1a1a1a;
+  --ca-primary: #0abab5;
+  --ca-secondary: #800000;
+  --ca-success: #0bda51;
+  --ca-info: #4169e1;
+  --ca-warning: #ff9966;
+  --ca-alert: #dc3545;
+  --ca-light: #9a9a9a;
+  --ca-dark: #282828;
+  --ca-teal-rgb-rgb: #caffff;
+  --ca-yellow-rgb-rgb: #ffe41e;
+  --ca-red-rgb-rgb: #dc3545;
+  --ca-orange-rgb-rgb: #ff9966;
+  --ca-green-rgb-rgb: #0bda51;
+  --ca-blue-rgb-rgb: royalblue;
+  --ca-indigo-rgb-rgb: #6600ff;
+  --ca-purple-rgb-rgb: #510bda;
+  --ca-cyan-rgb-rgb: #0abab5;
+  --ca-pink-rgb-rgb: #cc3399;
+  --ca-primary-rgb-rgb: #0abab5;
+  --ca-secondary-rgb-rgb: maroon;
+  --ca-success-rgb-rgb: #0bda51;
+  --ca-info-rgb-rgb: royalblue;
+  --ca-warning-rgb-rgb: #ff9966;
+  --ca-alert-rgb-rgb: #dc3545;
+  --ca-white-rgb-rgb: #e4edf4;
+  --ca-black-rgb-rgb: #000100;
+  --ca-white-rgb: to-rgb(#fbfbfd);
+  --ca-black-rgb: to-rgb(#000100);
+  --ca-body-color-rgb: to-rgb(#000100);
+  --ca-body-bg-rgb: to-rgb(#000100);
+  --ca-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --ca-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --ca-gradient: linear-gradient(-120deg, rgba(10, 186, 181, 0.4) 35%, rgba(168, 169, 173, 0.3) 65%, rgba(255, 228, 30, 0.2) 75%, rgba(128, 0, 0, 0.1) 95%);
+  --ca-body-font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --ca-body-font-size: 1.15rem;
+  --ca-body-font-weight: 400;
+  --ca-line-height-body: line-height-md;
+  --ca-body-color: #000100;
+  --ca-body-bg: #000100;
+}
+
+/**
+ * Root Media Query Variables
+ */
+/**
+ * Extends
+ */
+.default-max-width {
+  max-width: 89.92vw, 610px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.site-footer, .wide-max-width {
+  max-width: 89.92vw, 1320px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media only screen and (min-width: 576px) {
+  .full-max-width {
+    width: auto;
+    max-width: 100vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+/*
+ * Placeholder mixin for <input>
+ */
+/*
+ * Output font size in px/rem
+ */
+/* MIXIN: Grid Loop */
+/* #BASE : Default font sizes, colors, line-height and font family for the Body Element & in put elements
+    ----------------------------------------------- */
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  display: revert;
+  all: unset;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+caption,
+td,
+th {
+  font-weight: bold;
+  text-align: left;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  font-style: italic;
+  content: "";
+}
+
+blockquote,
+q {
+  font-style: oblique;
+  display: inline;
+  margin: inherit;
+  quotes: "" "";
+}
+
+body {
+  color: #e4edf4;
+  font-family: "Raleway";
+  line-height: 1.15;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+  font-size: font-md;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+hr,
+ul,
+ol,
+dl {
+  margin-bottom: 1.1;
+}
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child,
+hr:last-child,
+ul:last-child,
+ol:last-child,
+dl:last-child {
+  margin-bottom: 0;
+}
+
+/**
+ * Basic styles for links
+ */
+a {
+  color: #0abab5;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffe41e;
+  text-decoration: underline;
+}
+
+a[href^=tel] {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  text-decoration: none;
+  font-style: inherit;
+}
+
+/**
+ * Rules
+ */
+hr {
+  height: 1px;
+  background-color: #000100;
+}
+
+/* Headings */
+.h1,
+.h1 a,
+.h2,
+.h2 a,
+.h3,
+.h3 a,
+.h4,
+.h4 a,
+.h5,
+.h5 a,
+.h6,
+.h6 a,
+h1,
+h1 a,
+h2,
+h2 a,
+h3,
+h3 a,
+h4,
+h4 a,
+h5,
+h5 a,
+h6,
+h6 a {
+  clear: both;
+  margin-top: 1.1;
+  margin-bottom: 1.1;
+  text-decoration: none;
+}
+.h1:last-child,
+.h1 a:last-child,
+.h2:last-child,
+.h2 a:last-child,
+.h3:last-child,
+.h3 a:last-child,
+.h4:last-child,
+.h4 a:last-child,
+.h5:last-child,
+.h5 a:last-child,
+.h6:last-child,
+.h6 a:last-child,
+h1:last-child,
+h1 a:last-child,
+h2:last-child,
+h2 a:last-child,
+h3:last-child,
+h3 a:last-child,
+h4:last-child,
+h4 a:last-child,
+h5:last-child,
+h5 a:last-child,
+h6:last-child,
+h6 a:last-child {
+  margin-bottom: 0;
+}
+
+.h1,
+h1 {
+  font-size: h1;
+  line-height: var(--xl);
+  margin: 0.67em 0;
+  margin-top: 2.3rem;
+}
+
+.h2,
+h2 {
+  font-size: h2;
+  line-height: 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.h3,
+h3 {
+  font-size: h3;
+  line-height: 1.25rem;
+}
+
+.h4,
+h4 {
+  font-size: h4;
+  line-height: 1.15;
+}
+
+.h5,
+h5 {
+  font-size: h5;
+  line-height: var(--md);
+}
+
+.h6,
+h6 {
+  font-size: h6;
+  line-height: 1.15;
+  margin-top: 1.1;
+  margin-bottom: 0;
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 4.2rem;
+  }
+
+  h3 {
+    font-size: 3.6rem;
+  }
+
+  h4 {
+    font-size: 3rem;
+  }
+
+  h5 {
+    font-size: 2.4rem;
+  }
+
+  h6 {
+    font-size: 1.5rem;
+  }
+}
+/* Text elements */
+p {
+  margin-top: 0;
+  margin-bottom: 1.1;
+}
+
+menu {
+  padding: 0 0 0 40px;
+}
+
+.strong,
+b,
+strong {
+  font-weight: bold;
+}
+
+.em,
+cite,
+dfn,
+em,
+i {
+  font-style: italic;
+}
+
+blockquote {
+  font-style: italic;
+  margin: 0 1.15rem;
+}
+
+address {
+  margin: 0 0 1.15rem;
+}
+
+abbr,
+abbr[title],
+acronym {
+  cursor: help;
+  border-bottom: 1px dotted #666;
+}
+
+ins,
+mark {
+  text-decoration: none;
+  background: #fff9c0;
+}
+
+sub,
+sup {
+  font-size: var(--sm);
+  line-height: 0;
+  position: relative;
+  height: 0;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+  bottom: 1ex;
+}
+
+sub {
+  top: 0.5ex;
+  bottom: -0.25em;
+}
+
+.small,
+small {
+  font-size: var(--sm);
+}
+
+big {
+  font-size: 125%;
+}
+
+/* Spacing –––––––––––––––––––––––––––––––––––––––––––––––––– */
+blockquote,
+dl,
+figure,
+form,
+menu,
+ol,
+p,
+pre,
+table,
+ul {
+  margin: 1.1 0;
+}
+
+ul,
+ol {
+  margin-left: 1.1;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+}
+
+.list--unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+
+/* Links –––––––––––––––––––––––––––––––––––––––––––––––––– */
+a,
+a:active {
+  text-decoration: none;
+  background: transparent;
+}
+a:hover,
+a:active:hover {
+  -webkit-text-decoration: var(--hover-decoration);
+          text-decoration: var(--hover-decoration);
+  color: #ffe41e;
+}
+
+a img {
+  border: 0;
+}
+
+a[href^=tel] {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Code –––––––––––––––––––––––––––––––––––––––––––––––––– */
+code {
+  font-size: 90%;
+  margin: 0 0.2rem;
+  padding: 0.2rem 0.5rem;
+  white-space: nowrap;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  background: #f1f1f1;
+}
+
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre;
+}
+
+pre {
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  overflow: auto;
+  max-width: 100vw;
+  margin: 0;
+  padding: 1.6em;
+  white-space: pre-wrap;
+}
+
+code,
+kbd,
+pre,
+samp,
+tt,
+var {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+dd {
+  margin: 1.25rem;
+}
+
+figure {
+  margin: 0;
+}
+
+*:focus {
+  outline: 0;
+}
+
+input,
+select,
+textarea {
+  line-height: 1.65;
+  width: 100%;
+  height: 1.65;
+  padding: 0 0.55;
+  color: #e4edf4;
+  border: solid 1px #e4edf4;
+  border-radius: 0;
+  background-color: #000100;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  line-height: normal;
+  width: auto;
+  height: auto;
+  border: 0;
+  background: transparent;
+}
+
+input[type=file] {
+  line-height: normal;
+  height: auto;
+  padding: 0.275 0.55;
+}
+
+input[type=submit] {
+  border-radius: 0;
+}
+
+input[disabled] {
+  cursor: not-allowed;
+  background-color: whitesmoke;
+}
+
+select {
+  line-height: normal;
+  padding: 0;
+  padding-left: 0.55;
+}
+
+textarea {
+  overflow: auto;
+  min-height: 4.4;
+  resize: vertical;
+  vertical-align: top;
+}
+
+/**
+ * Form utility classes
+ */
+.form--inline .form__group {
+  display: inline-block;
+}
+
+.form .form__group {
+  display: block;
+  margin-bottom: 1.1;
+}
+.form .form__group .form__label {
+  display: block;
+  margin-bottom: 0.55;
+}
+
+/* Tables –––––––––––––––––––––––––––––––––––––––––––––––––– */
+table {
+  width: var(--col16);
+  margin: 0 0 1.15rem;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+table td,
+table th {
+  text-align: left;
+}
+
+th {
+  font-weight: bold;
+}
+
+td,
+th {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+td:first-child,
+th:first-child {
+  padding-left: 0;
+}
+
+td:last-child,
+th:last-child {
+  padding-right: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+/**
+ * Responsive images
+ */
+.is-fluid {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/**
+* Text aligments
+*/
+.align-text-left {
+  text-align: left;
+}
+
+.align-text-right {
+  text-align: right;
+}
+
+.align-text-center {
+  text-align: center;
+}
+
+/**
+* Clearing and floating
+*/
+.alignleft,
+.float-left {
+  float: left;
+}
+img .alignleft,
+img .float-left {
+  margin-right: 0.05rem;
+}
+
+.alignright,
+.float-right {
+  float: right;
+}
+img .alignright,
+img .float-right {
+  margin-left: 0.05rem;
+}
+
+.aligncenter,
+.float-center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+img .aligncenter,
+img .float-center {
+  margin-bottom: 0.05rem;
+}
+
+/* Clearing –––––––––––––––––––––––––––––––––––––––––––––––––– */
+span.amp {
+  font-family: Baskerville, "Goudy Old Style", Palatino, "Book Antiqua", serif !important;
+  font-style: italic;
+}
+
+.image-replacement,
+.ir {
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 100%;
+}
+
+.container:after,
+.row:after,
+.u-cf {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+/**
+* Clearing and floating
+*/
+.alignleft,
+.float-left {
+  float: left;
+}
+img .alignleft,
+img .float-left {
+  margin-right: 0.05rem;
+}
+
+.alignright,
+.float-right {
+  float: right;
+}
+img .alignright,
+img .float-right {
+  margin-left: 0.05rem;
+}
+
+.aligncenter,
+.float-center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+img .aligncenter,
+img .float-center {
+  margin-bottom: 0.05rem;
+}
+
+.cf::after,
+.clear::after,
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.cf:after, .cf:before,
+.clear:after,
+.clear:before,
+.clearfix:after,
+.clearfix:before {
+  content: " ";
+  display: table;
+  table-layout: fixed;
+}
+.cf:after,
+.clear:after,
+.clearfix:after {
+  clear: both;
+}
+
+/* Misc –––––––––––––––––––––––––––––––––––––––––––––––––– */
+hr {
+  overflow: visible;
+  box-sizing: content-box;
+  height: 0;
+  margin-top: 4.6rem;
+  margin-bottom: 5.75rem;
+  border-width: 0;
+  border-top: 1px solid #e1e1e1;
+  background-color: var(--body-bg);
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  display: grid;
+  max-width: 1330px;
+  margin: auto;
+  padding: 0.75rem 5px 0.75rem 5px;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  gap: 5px;
+  grid-gap: 5px;
+}
+.container::after,
+.container-fluid::after,
+.container-xxl::after,
+.container-xl::after,
+.container-lg::after,
+.container-md::after,
+.container-sm::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container:after, .container:before,
+.container-fluid:after,
+.container-fluid:before,
+.container-xxl:after,
+.container-xxl:before,
+.container-xl:after,
+.container-xl:before,
+.container-lg:after,
+.container-lg:before,
+.container-md:after,
+.container-md:before,
+.container-sm:after,
+.container-sm:before {
+  content: " ";
+  display: table;
+  table-layout: fixed;
+}
+.container:after,
+.container-fluid:after,
+.container-xxl:after,
+.container-xl:after,
+.container-lg:after,
+.container-md:after,
+.container-sm:after {
+  clear: both;
+}
+
+.container > * {
+  border-width: sm;
+  border-style: solid;
+  border-color: #ffe41e;
+  grid: display;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -5px;
+  margin-right: -2.5px;
+  margin-left: -2.5px;
+  list-style: none;
+}
+.row:before, .row:after {
+  display: table;
+  content: "";
+}
+.row:after {
+  clear: both;
+}
+.row:not(.row--flex)::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.row:not(.row--flex):after, .row:not(.row--flex):before {
+  content: " ";
+  display: table;
+  table-layout: fixed;
+}
+.row:not(.row--flex):after {
+  clear: both;
+}
+.row.row--gutterless {
+  margin-left: 0;
+}
+.row.row--flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row > * {
+  flex-shrink: 0;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 5px;
+  padding-right: 2.5px;
+  padding-left: 2.5px;
+}
+
+.col {
+  float: left;
+  flex: 1 0 0;
+  box-sizing: border-box;
+  padding-left: 5px;
+}
+.row--gutterless .col {
+  padding-left: 0;
+}
+
+.col:first-child {
+  margin-left: 0;
+}
+
+/* STRUCTURE
+----------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  max-height: 100%;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+header {
+  z-index: 500;
+  display: flex;
+  overflow: visible;
+}
+
+main {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+}
+
+footer {
+  width: 87.5%;
+  height: 6.25%;
+  max-height: 6.25%;
+}
+
+/* Containers
+----------------------------------------------- */
+.main,
+.content {
+  border-radius: 1rem;
+}
+
+.site {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  max-height: 100%;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0;
+  background-image: url("assets/img/");
+}
+
+.site-header {
+  position: fixed;
+  top: 0.05rem;
+  right: 93vw;
+  bottom: 0.05rem;
+  left: 0;
+  width: 7vw;
+  max-width: 7vw;
+  height: 100vh;
+  max-height: 100vh;
+  margin-top: 0;
+  margin-right: 1rem;
+  margin-bottom: 0.25rem;
+  margin-left: 0.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+}
+
+.main {
+  position: fixed;
+  top: 5vh;
+  right: 3.12%;
+  bottom: 0;
+  /* Set this to the height of the footer */
+  left: 9%;
+  /* Width of the nav bar */
+  width: 87.5%;
+  max-width: 93.75%;
+  height: 93.75%;
+  max-height: 93.75%;
+  margin-right: 0.05rem;
+  margin-left: 0.05rem;
+  padding-top: 0.05rem;
+  padding-bottom: 0.05rem;
+  background-attachment: fixed;
+}
+
+#primary {
+  /* The container for your primary content.*/
+}
+
+#content {
+  /* The container for your post and page content. */
+}
+
+#secondary {
+  /* Container for your first widget area */
+}
+
+#tertiary {
+  /* Container for your second widget area */
+}
+
+.site-footer {
+  position: fixed;
+  right: 10%;
+  bottom: 0;
+  left: 10%;
+  padding-top: 0;
+  padding-bottom: 1.955rem;
+}
+@media only screen and (max-width: 575px) {
+  .no-widgets .site-footer {
+    margin-top: 3.45rem;
+  }
+}
+.no-widgets .site-footer {
+  margin-top: 6.9rem;
+}
+
+/* #Wrappers
+----------------------------------------------- */
+#main {
+  border-radius: 0.875rem;
+  background-image: linear-gradient(-120deg, rgba(10, 186, 181, 0.4) 35%, rgba(168, 169, 173, 0.3) 65%, rgba(255, 228, 30, 0.2) 75%, rgba(128, 0, 0, 0.1) 95%);
+}
+
+#secondary {
+  border-width: 2;
+  border-style: solid;
+  border-radius: 0.875rem;
+  background-image: linear-gradient(270deg, transparent, rgba(168, 169, 173, 0.45), rgba(168, 169, 173, 0.65), rgba(168, 169, 173, 0.85));
+}
+
+#tertiary {
+  font-size: 2.2vh;
+  text-align: left;
+  color: #ffe41e;
+  border-radius: border-radius-lg;
+  box-shadow: box-shadow;
+}
+
+/* =Site Header
+----------------------------------------------- */
+/* Style elements inside of the .site-header container */
+.site-header hgroup {
+  /* Container for site title and description */
+}
+
+.site-title {
+  font-family: "Euphorigenic";
+  font-family: "Euphorigenic", sans-serif;
+  font-size: 9vh;
+  line-height: xl;
+  line-height: 2.75rem;
+  z-index: 525;
+  margin-right: -11rem;
+  margin-left: 0;
+  color: #0abab5;
+  text-shadow: 0 0 2px #ffe41e, 1px 2px 4px #ffe41e, 1px 2px 6px #ffe41e, 2px 4px 8px #ffe41e;
+  -webkit-text-stroke-width: 1.75px;
+  -webkit-text-stroke-color: #800000;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  -webkit-text-orientation: upright;
+          text-orientation: upright;
+}
+
+.the {
+  font-family: "Euphorigenic", sans-serif;
+  font-size: 5vh;
+  z-index: 525;
+  margin-left: 0;
+  color: #0abab5;
+  text-shadow: 0 0 2px #ffe41e, 0 0 4px #ffe41e, 1px 2px 6px #ffe41e;
+  -webkit-text-stroke-width: 1.75px;
+  -webkit-text-stroke-color: #800000;
+}
+
+.site-description {
+  font-family: "Hand Typewriter";
+  font-size: 3vh;
+  position: fixed;
+  top: 0.75vh;
+  right: 0;
+  left: 10vw;
+}
+
+/* # MAIN
+----------------------------------------------- */
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  word-wrap: break-word;
+  background-color: #fbfbfd;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 1, 0, 0.125);
+  border-radius: var(--border-radius-md);
+}
+.card > hr {
+  margin-right: 0;
+  margin-left: 0;
+}
+.card > .list-group {
+  border-top: inherit;
+  border-bottom: inherit;
+}
+.card > .list-group:first-child {
+  border-top-width: 0;
+  border-top-left-radius: subtract(0.875rem, 1px);
+  border-top-right-radius: subtract(0.875rem, 1px);
+}
+.card > .list-group:last-child {
+  border-bottom-width: 0;
+  border-bottom-left-radius: subtract(0.875rem, 1px);
+  border-bottom-right-radius: subtract(0.875rem, 1px);
+}
+.card > .card-header + .list-group,
+.card > .list-group + .card-footer {
+  border-top: 0;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.15rem 1.15rem;
+}
+
+.card-title {
+  margin-bottom: 0.575rem;
+}
+
+.card-subtitle {
+  margin-top: 0.2875rem;
+  margin-bottom: 0;
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+.card-link + .card-link {
+  margin-left: 1.15rem;
+}
+
+.card-header {
+  padding: 0.575rem 1.15rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 1, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 1, 0, 0.125);
+}
+.card-header:first-child {
+  border-radius: subtract(0.875rem, 1px) subtract(0.875rem, 1px) 0 0;
+}
+
+.card-footer {
+  padding: 0.575rem 1.15rem;
+  background-color: rgba(0, 1, 0, 0.03);
+  border-top: 1px solid rgba(0, 1, 0, 0.125);
+}
+.card-footer:last-child {
+  border-radius: 0 0 subtract(0.875rem, 1px) subtract(0.875rem, 1px);
+}
+
+.card-header-tabs {
+  margin-right: -0.575rem;
+  margin-bottom: -0.575rem;
+  margin-left: -0.575rem;
+  border-bottom: 0;
+}
+.card-header-tabs .nav-link.active {
+  background-color: #fbfbfd;
+  border-bottom-color: #fbfbfd;
+}
+
+.card-header-pills {
+  margin-right: -0.575rem;
+  margin-left: -0.575rem;
+}
+
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1.15rem;
+  border-radius: subtract(0.875rem, 1px);
+}
+
+.card-img,
+.card-img-top,
+.card-img-bottom {
+  width: 100%;
+}
+
+.card-img,
+.card-img-top {
+  border-top-left-radius: subtract(0.875rem, 1px);
+  border-top-right-radius: subtract(0.875rem, 1px);
+}
+
+.card-img,
+.card-img-bottom {
+  border-bottom-right-radius: subtract(0.875rem, 1px);
+  border-bottom-left-radius: subtract(0.875rem, 1px);
+}
+
+.card-group > .card {
+  margin-bottom: 2.5px;
+}
+
+/* # HELPERS
+----------------------------------------------- */
+/**
+ * Root Media Query Variables
+ */
+/**
+ * Extends
+ */
+.default-max-width {
+  max-width: 89.92vw, 610px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.site-footer, .wide-max-width {
+  max-width: 89.92vw, 1320px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media only screen and (min-width: 576px) {
+  .full-max-width {
+    width: auto;
+    max-width: 100vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+/*
+ * Placeholder mixin for <input>
+ */
+/*
+ * Output font size in px/rem
+ */
+/* MIXIN: Grid Loop */
+/* ## Colors =============== */
+/* teal */
+/* chocolate (chocolate) */
+/* silver */
+/* yellow (sunglow) */
+/* Saltpan */
+/* dark white */
+/* GRADIENTS */
+/* GRADIENT BORDERS */
+.border-gradient-chocolate {
+  -o-border-image: linear-gradient(30deg, rgba(98, 52, 18, 0.45) 10%, rgba(123, 63, 0, 0.55) 20%, rgba(193, 154, 107, 0.65) 30%, #ffffcc 80%) 10% round;
+  border-image: linear-gradient(30deg, rgba(98, 52, 18, 0.45) 10%, rgba(123, 63, 0, 0.55) 20%, rgba(193, 154, 107, 0.65) 30%, #ffffcc 80%) 10% round;
+}
+
+.border-gradient-primary {
+  -o-border-image: gradient-primary 10% round;
+  border-image: gradient-primary 10% round;
+}
+
+.border-gradient-white {
+  -o-border-image: linear-gradient(-70deg, rgba(0, 0, 0, 0.2) 30%, rgba(251, 251, 253, 0.3) 45%, rgba(237, 230, 214, 0.4) 60%, rgba(228, 237, 244, 0.5) 75%, rgba(168, 169, 173, 0.6) 90%, rgba(78, 78, 78, 0.7) 100%), 10% round;
+  border-image: linear-gradient(-70deg, rgba(0, 0, 0, 0.2) 30%, rgba(251, 251, 253, 0.3) 45%, rgba(237, 230, 214, 0.4) 60%, rgba(228, 237, 244, 0.5) 75%, rgba(168, 169, 173, 0.6) 90%, rgba(78, 78, 78, 0.7) 100%), 10% round;
+}
+
+.border-gradient-theme {
+  -o-border-image: linear-gradient(-120deg, rgba(10, 186, 181, 0.4) 35%, rgba(168, 169, 173, 0.3) 65%, rgba(255, 228, 30, 0.2) 75%, rgba(128, 0, 0, 0.1) 95%) 10% round;
+  border-image: linear-gradient(-120deg, rgba(10, 186, 181, 0.4) 35%, rgba(168, 169, 173, 0.3) 65%, rgba(255, 228, 30, 0.2) 75%, rgba(128, 0, 0, 0.1) 95%) 10% round;
+}
+
+.border-gradient-yellow {
+  -o-border-image: linear-gradient(150deg, rgba(255, 227, 2, 0.45) 35%, rgba(255, 228, 30, 0.7) 65%, rgba(11, 218, 81, 0.2) 100%) 10% round;
+  border-image: linear-gradient(150deg, rgba(255, 227, 2, 0.45) 35%, rgba(255, 228, 30, 0.7) 65%, rgba(11, 218, 81, 0.2) 100%) 10% round;
+}
+
+/* BOX SHADOW */
+/**
+ * ## Z-Index
+ =========================*/
+.border-gradient-* {
+  border-width: lg;
+  border-style: solid;
+  border-radius: 0.875rem;
+}
+
+/**
+ * ## Card
+ =========================*/
+.link-primary {
+  color: #0abab5;
+}
+.link-primary:hover, .link-primary:focus {
+  color: tint-color(#0abab5, 25%);
+}
+
+.link-secondary {
+  color: #800000;
+}
+.link-secondary:hover, .link-secondary:focus {
+  color: tint-color(#800000, 25%);
+}
+
+.link-success {
+  color: #0bda51;
+}
+.link-success:hover, .link-success:focus {
+  color: tint-color(#0bda51, 25%);
+}
+
+.link-info {
+  color: #4169e1;
+}
+.link-info:hover, .link-info:focus {
+  color: tint-color(#4169e1, 25%);
+}
+
+.link-warning {
+  color: #ff9966;
+}
+.link-warning:hover, .link-warning:focus {
+  color: tint-color(#ff9966, 25%);
+}
+
+.link-alert {
+  color: #dc3545;
+}
+.link-alert:hover, .link-alert:focus {
+  color: tint-color(#dc3545, 25%);
+}
+
+.link-light {
+  color: #9a9a9a;
+}
+.link-light:hover, .link-light:focus {
+  color: tint-color(#9a9a9a, 25%);
+}
+
+.link-dark {
+  color: #282828;
+}
+.link-dark:hover, .link-dark:focus {
+  color: tint-color(#282828, 25%);
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.fixed-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+.ratio {
+  position: relative;
+  width: 100%;
+}
+.ratio::before {
+  display: block;
+  padding-top: var(--ca-aspect-ratio);
+  content: "";
+}
+.ratio > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ratio-1x1 {
+  --ca-aspect-ratio: 100%;
+}
+
+.ratio-4x3 {
+  --ca-aspect-ratio: 75%;
+}
+
+.ratio-16x9 {
+  --ca-aspect-ratio: 56.25%;
+}
+
+.ratio-21x9 {
+  --ca-aspect-ratio: 42.8571428571%;
+}
+
+.hstack {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: stretch;
+}
+
+.vstack {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-self: stretch;
+}
+
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+.visually-hidden:not(:focus):not(:focus-within) {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.vr {
+  display: inline-block;
+  align-self: stretch;
+  width: 1px;
+  min-height: 1em;
+  background-color: currentColor;
+  opacity: 0.25;
+}
+
+/* # RESPONSIVE STYLES
+----------------------------------------------- */
+/**
+     * Root Media Query Variables
+     */
+/**
+     * Extends
+     */
+.default-max-width {
+  max-width: 89.92vw, 610px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.wide-max-width, .site-footer {
+  max-width: 89.92vw, 1320px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media only screen and (min-width: 576px) {
+  .full-max-width {
+    width: auto;
+    max-width: 100vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
