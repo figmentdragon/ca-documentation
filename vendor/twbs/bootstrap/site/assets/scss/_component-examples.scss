@@ -46,7 +46,7 @@
 // Grid mixins
 .example-container {
   width: 800px;
-  @include make-container($gutter: $container-padding-x);
+  @include make-container();
 }
 
 .example-row {

@@ -1,0 +1,67 @@
+$cjmt-white: #e4edf4;
+$cjmt-gray-100: #c0c0c0;
+$cjmt-gray-200: #9a9a9a;
+$cjmt-gray-300: #7b7b7b;
+$cjmt-gray-400: #626262;
+$cjmt-gray-500: #4e4e4e;
+$cjmt-gray-600: #3e3e3e;
+$cjmt-gray-700: #323232;
+$cjmt-gray-800: #282828;
+$cjmt-gray-900: #1a1a1a;
+$cjmt-black: #000100;
+
+$cjmt-grays: (
+  100: $cjmt-gray-100,
+  200: $cjmt-gray-200,
+  300: $cjmt-gray-300,
+  400: $cjmt-gray-400,
+  500: $cjmt-gray-500,
+  600: $cjmt-gray-600,
+  700: $cjmt-gray-700,
+  800: $cjmt-gray-800,
+  900: $cjmt-gray-900
+);
+
+$cjmt-blue: #4169e1;
+$cjmt-indigo: #60f;
+$cjmt-purple: #510bda;
+$cjmt-pink: #c39;
+$cjmt-red: #dc3545;
+$cjmt-orange: #f96;
+$cjmt-yellow: #ffe41e;
+$cjmt-green: #0bda51;
+$cjmt-teal: #caffff;
+$cjmt-cyan: #0abab5;
+$cjmt-silver: #a8a9ad;
+$cjmt-brown: #623412;
+$cjmt-gray: $cjmt-gray-600;
+$cjmt-dark: $cjmt-gray-900;
+$cjmt-light: $cjmt-gray-100;
+
+$cjmt-color:(
+cjmt-blue: $cjmt-blue;
+cjmt-indigo: $cjmt-indigo;
+cjmt-purple: $cjmt-purple;
+cjmt-pink: $cjmt-pink;
+cjmt-red: $cjmt-red;
+cjmt-orange: $cjmt-orange;
+cjmt-yellow: $cjmt-yellow;
+cjmt-green: $cjmt-green;
+cjmt-teal: $cjmt-teal;
+cjmt-cyan: $cjmt-cyan;
+cjmt-silver: $cjmt-silver;
+cjmt-brown: $cjmt-brown;
+cjmt-gray: $cjmt-gray;
+cjmt-dark: $cjmt-dark;
+cjmt-light: $cjmt-light;
+);
+
+$cjmt-color-primary: #0abab5;
+$cjmt-color-secondary: #ffe41e;
+$cjmt-color-accent: #a8a9ad;
+
+$cjmt-theme-color: (
+  primary:  #0abab5,
+  secondary: #ffe41e,
+  accent: #a8a9ad
+);

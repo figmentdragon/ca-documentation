@@ -1,0 +1,19 @@
+{
+  "name": "cjmt_docs",
+  "version": "1.0.0",
+  "description": "- consist of three separate technologies that are used together:",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/figmentdragon/cjmt_docs.git"
+  },
+  "author": "cjmt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/figmentdragon/cjmt_docs/issues"
+  },
+  "homepage": "https://github.com/figmentdragon/cjmt_docs#readme"
+}

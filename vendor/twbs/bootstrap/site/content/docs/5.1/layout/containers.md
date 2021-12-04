@@ -169,7 +169,7 @@ In addition to customizing the Sass, you can also create your own containers wit
 
 // Usage
 .custom-container {
-  @include make-container($gutter: $container-padding-x);
+  @include make-container();
 }
 ```
 

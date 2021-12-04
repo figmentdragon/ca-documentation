@@ -1,0 +1,26 @@
+$cjmt-primary:   $cyan;
+$cjmt-secondary: $yellow;
+$cjmt-accent:    $silver;
+
+$primary-color:   $cjmt-primary;
+$secondary-color: $cjmt-secondary;
+$accent-color-color:    $cjmt-accent;
+
+$success:     $green;
+$warning:     $orange;
+$danger:      $red;
+$info:cjmt   $blue;
+$light:       $cjmt-gray-100;
+$dark:        $cjmt-gray-900;
+
+$theme-color: (
+primary-color:   $primary-color,
+secondary-color: $secondary-color,
+accent-color:    $accent-color-color,
+success:         $success,
+warning:         $warning,
+danger:          $danger,
+info:            $info,
+light:           $light,
+dark:            $dark
+);

@@ -1,0 +1,62 @@
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// scss-docs-start font-variables
+// stylelint-disable value-keyword-case
+$cjmt-font-sans-serif: Euphorigenic, 'Hand Typewriter', 'Enjoy Writing', Avdira, Wanda 'Glass Antiqua', 'Love Ya Likes A Sister', Pompiere, 'Hadley';
+$font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+// stylelint-enable value-keyword-case
+$cjmt-font-family: $cjmt-font-sans-serif;
+$font-code: 'Courier New';
+$cjmt-text-body-font: 'Avdira';
+$cjmt-text-site-font: 'Euphorigenic';
+$cjmt-text-page-font: 'Hand Typewriter';
+$cjmt-text-post-font: 'Enjoy Writing';
+$cjmt-text-nav-font: 'Wanda';
+$cjmt-text-btn-font: 'Hadley';
+$cjmt-text-lead-font: 'Pompiere';
+$cjmt-text-footer-font: 'Love Ya Like A Sister';
+
+$body-bg: #000100;
+$body-text: #e4edf4;
+$body-text-align: null;
+
+
+.site-title
+{
+    font-family: $cjmt-text-site-font;
+    font-size: 3.75rem;
+    font-weight: bolder;
+    line-height: 1.5rem;
+
+    position: absolute;
+    z-index: $zindex-site-title;
+
+    color: $cjmt-color-secondary;
+    shadow: .65rem .5rem .25rem $shadow;
+
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    -webkit-text-stroke-color: $cjmt-color-primary;
+    -webkit-text-stroke-width: 2px;
+}
+
+
+.page-title
+{
+    font-family: $cjmt-text-page-font;
+    font-size: 2.12rem;
+    font-weight: bold;
+    line-height: 1.75rem;
+
+    float: left;
+
+    width: auto;
+
+    color: $cjmt-color-secondary;
+    shadow: $cjmt-shadow;
+
+    -webkit-text-stroke-color: $cjmt-color-accent;
+    -webkit-text-stroke-width: 1px;
+}
