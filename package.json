@@ -4,7 +4,9 @@
   "description": "- consist of three separate technologies that are used together:",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "build": "sass --embed-sources --embed-source-map docs.scss doc.css -w",
+    "server": "serve --listen 3000"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/figmentdragon/cjmt_docs/issues"
   },
-  "homepage": "https://github.com/figmentdragon/cjmt_docs#readme"
+  "homepage": "https://github.com/figmentdragon/cjmt_docs#readme",
+  "devDependencies": {
+    "sass": "^1.44.0",
+    "scss": "^0.2.4",
+    "serve": "^13.0.2",
+    "style-sherpa": "^1.0.2"
+  },
+  "dependencies": {
+    "css": "^3.0.0"
+  }
 }

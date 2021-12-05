@@ -1,26 +1,41 @@
 'use strict';
+const autoprefixer = require('autoprefixer')
 const fs = require('fs');
 const packageJSON = require('../package.json');
 const upath = require('upath');
+const postcss = require('postcss')
+const sass = require('sass');
 const sh = require('shelljs');
 
-module.exports = function renderScripts() {
+const stylesPath = '../src/styles.scss';
+const destPath = upath.resolve(upath.dirname(__filename), '../src/build/styles.css');
 
-    const sourcePath = upath.resolve(upath.dirname(__filename), '../src/js');
-    const destPath = upath.resolve(upath.dirname(__filename), '../dist/assets/scripts/.');
+module.exports = function renderSCSS() {
 
-    sh.cp('-R', sourcePath, destPath)
+    const results = sass.renderSync({
+        data: entryPoint,
+        includePaths: [
+            upath.resolve(upath.dirname(__filename), '../node_modules')
+        ],
+      });
 
-    const sourcePathScriptsJS = upath.resolve(upath.dirname(__filename), '../src/js/scripts.js');
-    const destPathScriptsJS = upath.resolve(upath.dirname(__filename), '../dist/assets/scripts/js/scripts.js');
+    const destPathDirname = upath.dirname(destPath);
+    if (!sh.test('-e', destPathDirname)) {
+        sh.mkdir('-p', destPathDirname);
+    }
 
-    const copyright = `/*!
-* Start Bootstrap - ${packageJSON.title} v${packageJSON.version} (${packageJSON.homepage})
-* Copyright 2021-${new Date().getFullYear()} ${packageJSON.author}
-* Licensed under ${packageJSON.license} (https://github.com/figmentdragon/${packageJSON.name}/blob/master/LICENSE)
-*/
-`
-    const scriptsJS = fs.readFileSync(sourcePathScriptsJS);
+    postcss([ autoprefixer ]).process(results.css, {from: 'styles.css', to: 'styles.css'}).then(result => {
+        result.warnings().forEach(warn => {
+            console.warn(warn.toString())
+        })
+        fs.writeFileSync(destPath, result.css.toString());
+    })
 
-    fs.writeFileSync(destPathScriptsJS, copyright + scriptsJS);
 };
+
+const entryPoint = `/*!
+* Start Bootstrap - ${packageJSON.title} v${packageJSON.version} (${packageJSON.homepage})
+* Copyright 2013-${new Date().getFullYear()} ${packageJSON.author}
+* Licensed under ${packageJSON.license} (https://github.com/StartBootstrap/${packageJSON.name}/blob/master/LICENSE)
+*/
+@import "${stylesPath}"
