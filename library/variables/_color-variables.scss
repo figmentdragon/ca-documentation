@@ -1,0 +1,57 @@
+/* Utitities Color */
+
+/* Utilities Typography */
+$text-muted:        $text-muted-color !default;
+$body-text:         $body-text-color !default;
+$body-bg:           $body-bg-color !default;
+
+$site-title:        $site-title-color !default;
+$page-title:        $page-title-color !default;
+$post-title:        $post-title-color !default;
+$lead-text:         $lead-text-color !default;
+$caption-text:      $caption-text-color !default;
+$nav-text:          $nav-text-color !default;
+$btn-text:          $btn-text-color !default;
+$quote-text:        $quote-text-color !default;
+$footer-text:       $footer-text-color !default;
+
+$light:             $light-color !default;
+$dark:              $dark-color !default;
+
+/* Utilities Input*/
+$input-text:          $input-text-color !default;
+$input-bg:            $input-bg-color !default;
+$input-border:        $input-border-color !default;
+$input-text-focus:    $input-text-focus-color !default;
+$input-bg-focus:      $input-bg-focus-color !default;
+$input-border-focus:  $input-border-focus-color !default;
+
+$shadow:               $shadow-color !default;
+$shadow-text:          $shadow-text-color !default;
+$shadow-box:           $shadow-box-color !default;
+
+/* Link Utilities */
+$active-component:          $active-component-color !default;
+$active-component-bg:       $active-component-bg-color !default;
+$active-component-border:   $active-component-border-color !default;
+
+$disabled-text:             $disabled-text-color !default;
+$disabled-bg:               $disabled-bg-color !default;
+$disabled-border:           $disabled-border-color !default;
+
+/* Nav Utilities */
+$nav-active:                $nav-active-color !default;
+$nav-link-transition:       $nav-link-transition-color !default;
+
+$tabs-text-active:              $tabs-active-color !default;
+$tabs-bg-active:                $tabs-active-bg-color !default;
+$tabs-border-active:            $tabs-active-border-color !default;
+
+
+/* The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7. */
+/* See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast */
+$min-contrast-ratio:   4.5 !default;
+
+/* Customize the light and dark text colors for use in our color contrast function. */
+$color-contrast-dark:      $black !default;
+$color-contrast-light:     $white !default;
