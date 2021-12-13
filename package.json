@@ -1,30 +1,17 @@
 {
-  "name": "cjmt_docs",
+  "name": "ca-documentation",
   "version": "1.0.0",
-  "description": "- consist of three separate technologies that are used together:",
+  "description": "creativity architecture documentation for implementation",
   "main": "index.js",
   "scripts": {
-    "test": "test",
-    "build": "sass --embed-sources --embed-source-map docs.scss doc.css -w",
-    "server": "serve --listen 3000"
+    "test": "test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/figmentdragon/cjmt_docs.git"
-  },
-  "author": "cjmt",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/figmentdragon/cjmt_docs/issues"
-  },
-  "homepage": "https://github.com/figmentdragon/cjmt_docs#readme",
-  "devDependencies": {
-    "sass": "^1.44.0",
-    "scss": "^0.2.4",
-    "serve": "^13.0.2",
-    "style-sherpa": "^1.0.2"
-  },
+  "author": "CJMT",
+  "license": "MIT",
   "dependencies": {
-    "css": "^3.0.0"
+    "documents": "^0.0.1"
+  },
+  "devDependencies": {
+    "highlight.js": "^8.9.1"
   }
 }
